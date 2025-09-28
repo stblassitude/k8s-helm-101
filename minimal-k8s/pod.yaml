@@ -1,0 +1,10 @@
+# This is a minimal pod, demonstrating the smallest manifest that runs a container.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: minimal
+spec:
+  containers:
+  - image: busybox
+    name: minimal
+    command: [ 'sh', '-c', 'while :; do echo "Hello, world!"; sleep 30; done' ]

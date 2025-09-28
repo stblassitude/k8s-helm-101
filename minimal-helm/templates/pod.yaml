@@ -1,0 +1,11 @@
+# This is a minimal pod, demonstrating the smallest manifest that runs a container.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: {{ include "minimal-helm.fullname" . }}
+spec:
+  containers:
+  - image: busybox
+    name: minimal
+    command:
+      {{- toYaml .Values.command | nindent 6 }}
