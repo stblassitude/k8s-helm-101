@@ -1,10 +1,10 @@
 # Kubernetes Helm 101
 
-This repos demonstrates a number of minimal Kubernetes and Helm setups.
+This repo demonstrates a number of minimal Kubernetes and Helm setups.
 
 ## Minimal Kubernetes Pod
 
-[`minimal-k8s/pod.yaml`|(minimal-k8s/pod.yaml) deploys a minimal pod that prints "Hello, world!" every 30 seconds. The pod will continue running until stopped.
+[`minimal-k8s/pod.yaml`](minimal-k8s/pod.yaml) deploys a minimal pod that prints "Hello, world!" every 30 seconds. The pod will continue running until stopped.
 
 Deploy the pod with `kubectl apply -f minimal-k8s/pod.yaml`.
 
